@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>العروض والباقات | شام ترافل للسياحة والسفر</title>
+  <meta name="description" content="شام ترافل للسياحة والسفر - تذاكر طيران، حجز فنادق، تأشيرات، رحلات سياحية وعمرة بأفضل الأسعار وخدمة موثوقة.">
+  <meta name="theme-color" content="#f5faff">
+  <link rel="icon" href="assets/logo-mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-loading" data-page="packages">
+
+  <div class="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__logo"><img src="assets/logo.png" alt=""></div>
+      <div class="preloader__bar"><i></i></div>
+      <div class="preloader__txt">0%</div>
+    </div>
+  </div>
+
+    <main>
+    <section class="page-hero">
+      <div class="page-hero__bg" data-art="pattern"></div>
+      <div class="container">
+        <span class="eyebrow both" data-reveal="up">عروض وبرامج</span>
+        <h1 class="page-hero__title"><span class="word-reveal metal-shine">العروض</span></h1>
+        <p class="lead" style="margin-inline:auto" data-reveal="up">رحلات سياحية، شهر عسل وعمرة — باقات مصممة بعناية بأسعار واضحة وخدمات متكاملة.</p>
+        <div class="crumbs" data-reveal="up"><a href="index.html">الرئيسية</a><span>/</span>العروض</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters" data-reveal="up">
+          <button class="filter-btn active" data-filter="all">الكل</button>
+          <button class="filter-btn" data-filter="tour">رحلات سياحية</button>
+          <button class="filter-btn" data-filter="honey">شهر عسل</button>
+          <button class="filter-btn" data-filter="umrah">عمرة</button>
+        </div>
+        <div class="grid grid-3" id="packages-grid"></div>
+        <p class="center" style="color:var(--dim);font-size:14px;margin-top:40px" data-reveal="up">* الأسعار تقريبية وقابلة للتغيير حسب الموسم وتوفر الطيران والفنادق. تواصل معنا للحصول على السعر النهائي.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="cta" data-reveal="scale">
+          <div class="cta__pattern" data-art="pattern"></div>
+          <img class="cta__logo" src="assets/logo-mark.png" alt="">
+          <h2 class="h-display split-words">تريد برنامجاً <span class="metal-shine">مفصّلاً على مقاسك؟</span></h2>
+          <p class="lead">حدد الوجهة والمدة والميزانية، ونحن نصمم لك الرحلة.</p>
+          <div class="hero__actions">
+            <a href="booking.html" class="btn btn--primary" data-magnetic>اطلب برنامجاً خاصاً <span data-icon="arrow" style="display:contents"></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal" id="pkg-modal" role="dialog" aria-modal="true">
+      <div class="modal__bg" data-close></div>
+      <div class="modal__box">
+        <button class="icon-btn modal__close" data-close aria-label="إغلاق" data-icon="close"></button>
+        <div class="modal__media"></div>
+        <div class="modal__body modal__content"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

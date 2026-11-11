@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شام ترافل | Sham Travel - للسياحة والسفر</title>
+  <meta name="description" content="شام ترافل للسياحة والسفر - تذاكر طيران، حجز فنادق، تأشيرات، رحلات سياحية وعمرة بأفضل الأسعار وخدمة موثوقة.">
+  <meta name="theme-color" content="#f5faff">
+  <link rel="icon" href="assets/logo-mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-loading" data-page="index">
+
+  <div class="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__logo"><img src="assets/logo.png" alt=""></div>
+      <div class="preloader__bar"><i></i></div>
+      <div class="preloader__txt">0%</div>
+    </div>
+  </div>
+
+    <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="sky-bg">
+        <div class="cloud" style="--y:12%;--w:300px;--t:70s;--dl:-10s"><i></i></div>
+        <div class="cloud" style="--y:30%;--w:200px;--t:55s;--dl:-35s;--o:.75"><i></i></div>
+        <div class="cloud" style="--y:55%;--w:340px;--t:90s;--dl:-60s;--o:.8"><i></i></div>
+        <div class="cloud" style="--y:72%;--w:240px;--t:65s;--dl:-20s;--o:.7"><i></i></div>
+        <div class="cloud" style="--y:6%;--w:180px;--t:50s;--dl:-42s;--o:.6"><i></i></div>
+      </div>
+      <canvas class="hero__canvas"></canvas>
+      <div class="hero__glow"></div>
+      <div class="hero__pattern" data-art="rosette"></div>
+
+      <div class="container hero__grid">
+        <span class="eyebrow both fade-up" style="--d:.4s">بوابتك إلى العالم</span>
+        <div class="hero__en fade-up" style="--d:.6s">SHAM TRAVEL · TRAVEL &amp; TOURISM</div>
+        <h1 class="hero__title"><span class="word-reveal metal-shine">شام ترافل</span></h1>
+
+        <div class="hero__stage">
+          <div class="hero__ring"></div>
+          <div class="hero__frame" data-art="sky"></div>
+          <div class="hero__badge"><span class="dot" data-icon="ticket"></span><div><b>حجز فوري</b>تذاكر لكل الوجهات</div></div>
+          <div class="hero__badge b2"><span class="dot" data-icon="wallet"></span><div><b>أفضل الأسعار</b>عروض حصرية</div></div>
+        </div>
+
+        <div class="hero__sides">
+          <div class="hero__side r">
+            <h3 class="h-3">طيران وفنادق حول العالم</h3>
+            <p>نقارن لك بين الخيارات لنقدّم أفضل سعر وأنسب موعد.</p>
+          </div>
+          <div class="hero__side l">
+            <h3 class="h-3">رحلات سياحية متكاملة</h3>
+            <p>برامج مدروسة للعائلات والعرسان والمجموعات.</p>
+          </div>
+        </div>
+
+        <div class="hero__sub">
+          <p class="lead fade-up" style="--d:1.9s">من دمشق إلى كل العالم — تذاكر طيران، حجوزات فنادق، تأشيرات، ورحلات سياحية وعمرة بخدمة موثوقة ومتابعة من أول اتصال حتى عودتك.</p>
+          <div class="hero__actions fade-up" style="--d:2.05s">
+            <a href="packages.html" class="btn btn--primary" data-magnetic>اكتشف العروض <span data-icon="arrow" style="display:contents"></span></a>
+            <a class="btn btn--ghost" data-wa="مرحباً شام ترافل، أود الاستفسار عن رحلاتكم" data-magnetic><span data-icon="whatsapp" style="display:contents"></span> تواصل عبر واتساب</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUICK SEARCH ============ -->
+    <section class="qsearch">
+      <div class="container">
+        <form class="qsearch__box" id="qsearch" data-reveal="up">
+          <div class="qsearch__tabs">
+            <label><input type="radio" name="kind" value="تذكرة طيران" checked><span data-icon="plane">طيران</span></label>
+            <label><input type="radio" name="kind" value="حجز فندق"><span data-icon="hotel">فندق</span></label>
+            <label><input type="radio" name="kind" value="رحلة سياحية"><span data-icon="globe">رحلة</span></label>
+          </div>
+          <div class="field"><label>من</label><input name="from" value="دمشق"></div>
+          <div class="field"><label>إلى</label><input name="to" placeholder="إسطنبول، دبي..."></div>
+          <div class="field"><label>تاريخ السفر</label><input type="date" name="date"></div>
+          <div class="field"><label>المسافرين</label><select name="pax"><option>1 مسافر</option><option>2 مسافرين</option><option>3 مسافرين</option><option>4 مسافرين</option><option>5+ مسافرين</option></select></div>
+          <button class="btn btn--primary" type="submit"><span data-icon="whatsapp" style="display:contents"></span> اطلب السعر</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true" style="margin-top:80px">
+      <div class="marquee__track">
+        <div class="marquee__item">إسطنبول <span data-icon="plane"></span> <span class="fill">دبي</span> <span data-icon="plane"></span> القاهرة <span data-icon="plane"></span> <span class="fill">كوالالمبور</span> <span data-icon="plane"></span> طرابزون <span data-icon="plane"></span> <span class="fill">المالديف</span> <span data-icon="plane"></span> مكة المكرمة <span data-icon="plane"></span></div>
+        <div class="marquee__item">إسطنبول <span data-icon="plane"></span> <span class="fill">دبي</span> <span data-icon="plane"></span> القاهرة <span data-icon="plane"></span> <span class="fill">كوالالمبور</span> <span data-icon="plane"></span> طرابزون <span data-icon="plane"></span> <span class="fill">المالديف</span> <span data-icon="plane"></span> مكة المكرمة <span data-icon="plane"></span></div>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT INTRO ============ -->
+    <section class="section">
+      <div class="container split">
+        <div>
+          <span class="eyebrow" data-reveal="up">من نحن</span>
+          <h2 class="h-1 split-words" style="margin:14px 0 18px">نخطط لرحلتك… <span class="metal">وأنت استمتع</span> بكل لحظة</h2>
+          <p class="lead" data-reveal="up" style="--rd:.1s">شام ترافل شركة سياحة وسفر تقدّم حلولاً متكاملة للمسافرين: من تذكرة الطيران والفندق والتأشيرة، إلى البرامج السياحية الكاملة ورحلات العمرة. هدفنا أن يكون سفرك سهلاً وممتعاً وبأفضل قيمة.</p>
+          <ul class="check-list">
+            <li data-reveal="up" style="--rd:.15s"><i data-icon="check"></i><span><b>خيارات لكل ميزانية</b> من الاقتصادي حتى الفاخر.</span></li>
+            <li data-reveal="up" style="--rd:.2s"><i data-icon="check"></i><span><b>أسعار واضحة</b> بدون رسوم مخفية.</span></li>
+            <li data-reveal="up" style="--rd:.25s"><i data-icon="check"></i><span><b>متابعة مستمرة</b> قبل السفر وخلاله وبعد العودة.</span></li>
+          </ul>
+          <a href="about.html" class="btn btn--ghost" data-reveal="up" style="--rd:.3s" data-magnetic>تعرّف علينا <span data-icon="arrow" style="display:contents"></span></a>
+        </div>
+        <div class="stack-visual">
+          <div class="visual-card" data-reveal="clip" data-speed="0.05" data-art="plane">
+            <div class="visual-card__tag"><div><small>شام ترافل</small><b>رحلات إلى أكثر من وجهة حول العالم</b></div><div class="card__icon" style="margin:0;width:48px;height:48px" data-icon="plane"></div></div>
+          </div>
+          <div class="visual-card small" data-reveal="scale" style="--rd:.3s" data-speed="-0.06" data-art="hotel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="section--tight" style="padding-top:clamp(40px,6vw,90px)">
+      <div class="container">
+        <div class="stats" data-reveal="up">
+          <div class="stat"><div class="stat__num metal"><span data-count="8">0</span></div><p>خدمات سفر متكاملة</p></div>
+          <div class="stat"><div class="stat__num metal"><span data-count="9">0</span><small>+</small></div><p>باقات وعروض متنوعة</p></div>
+          <div class="stat"><div class="stat__num metal"><span data-count="24">0</span><small>/7</small></div><p>متابعة ودعم للمسافرين</p></div>
+          <div class="stat"><div class="stat__num metal"><span data-count="100">0</span><small>%</small></div><p>التزام براحتك</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head center">
+          <span class="eyebrow both" data-reveal="up">خدماتنا</span>
+          <h2 class="h-1 split-words">كل ما يحتاجه سفرك… <span class="metal">في مكان واحد</span></h2>
+          <p class="lead" data-reveal="up">طيران، فنادق، تأشيرات، رحلات، نقل وتأمين — فريق واحد يتابع كل التفاصيل.</p>
+        </div>
+        <div class="grid grid-4" id="services-grid" data-limit="8"></div>
+      </div>
+    </section>
+
+    <!-- ============ DESTINATIONS ============ -->
+    <section class="section" style="background:linear-gradient(180deg,var(--bg-2),var(--bg));border-top:1px solid var(--line)">
+      <div class="container">
+        <div class="sec-head center">
+          <span class="eyebrow both" data-reveal="up">وجهات مميزة</span>
+          <h2 class="h-1 split-words">إلى أين <span class="metal">رحلتك القادمة؟</span></h2>
+        </div>
+        <div class="grid grid-4">
+          <a href="packages.html?type=tour" class="dest" data-reveal="up" data-art="istanbul"><span class="dest__go" data-icon="arrowUp"></span><div class="dest__body"><h3>إسطنبول</h3><p>تركيا · تاريخ وطبيعة</p></div></a>
+          <a href="packages.html?type=tour" class="dest" data-reveal="up" style="--rd:.1s" data-art="dubai"><span class="dest__go" data-icon="arrowUp"></span><div class="dest__body"><h3>دبي</h3><p>الإمارات · رفاهية وتسوق</p></div></a>
+          <a href="packages.html?type=honey" class="dest" data-reveal="up" style="--rd:.2s" data-art="kl"><span class="dest__go" data-icon="arrowUp"></span><div class="dest__body"><h3>ماليزيا</h3><p>شهر العسل · طبيعة وجزر</p></div></a>
+          <a href="packages.html?type=tour" class="dest" data-reveal="up" style="--rd:.3s" data-art="damascus"><span class="dest__go" data-icon="arrowUp"></span><div class="dest__body"><h3>سوريا</h3><p>سياحة داخلية · تاريخ وحضارة</p></div></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PACKAGES ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head" style="display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap">
+          <div>
+            <span class="eyebrow" data-reveal="up">عروض مختارة</span>
+            <h2 class="h-1 split-words" style="margin:14px 0 0">أحدث <span class="metal">العروض</span></h2>
+          </div>
+          <a href="packages.html" class="btn btn--ghost" data-reveal="up" data-magnetic>كل العروض <span data-icon="arrow" style="display:contents"></span></a>
+        </div>
+        <div class="grid grid-3" id="packages-grid" data-limit="3"></div>
+      </div>
+    </section>
+
+    <!-- ============ WHY US ============ -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="sec-head center">
+          <span class="eyebrow both" data-reveal="up">لماذا شام ترافل؟</span>
+          <h2 class="h-1 split-words">لأننا نهتم <span class="metal">بأدق التفاصيل</span></h2>
+        </div>
+        <div class="why">
+          <div class="why__item" data-reveal="up"><span data-icon="wallet"></span><h3>أسعار منافسة</h3><p>نقارن بين العروض لنقدّم لك أفضل قيمة مقابل سعرك.</p></div>
+          <div class="why__item" data-reveal="up" style="--rd:.08s"><span data-icon="clock"></span><h3>حجز سريع</h3><p>تأكيد سريع للتذاكر والفنادق ومتابعة فورية لطلبك.</p></div>
+          <div class="why__item" data-reveal="up" style="--rd:.16s"><span data-icon="shield"></span><h3>موثوقية وشفافية</h3><p>شروط واضحة وأسعار معلنة بدون مفاجآت.</p></div>
+          <div class="why__item" data-reveal="up"><span data-icon="globe"></span><h3>وجهات متنوعة</h3><p>برامج إلى أجمل الوجهات العربية والعالمية.</p></div>
+          <div class="why__item" data-reveal="up" style="--rd:.08s"><span data-icon="headset"></span><h3>دعم متواصل</h3><p>فريقنا معك قبل السفر وأثناء الرحلة وحتى العودة.</p></div>
+          <div class="why__item" data-reveal="up" style="--rd:.16s"><span data-icon="users"></span><h3>للعائلات والمجموعات</h3><p>برامج مرنة تناسب العائلات والشركات والمجموعات.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="sec-head center">
+          <span class="eyebrow both" data-reveal="up">كيف نعمل</span>
+          <h2 class="h-1 split-words">رحلتك في <span class="metal">أربع خطوات</span></h2>
+        </div>
+        <div class="process">
+          <div class="process__line"><i></i></div>
+          <div class="step" data-reveal="up"><div class="step__n">01</div><h3>اختر وجهتك</h3><p>تصفح العروض أو أخبرنا إلى أين تحب أن تسافر.</p></div>
+          <div class="step" data-reveal="up" style="--rd:.15s"><div class="step__n">02</div><h3>نصمم لك البرنامج</h3><p>نقترح أفضل الخيارات حسب ميزانيتك ومواعيدك.</p></div>
+          <div class="step" data-reveal="up" style="--rd:.3s"><div class="step__n">03</div><h3>نجهّز كل شيء</h3><p>التذاكر والفنادق والتأشيرة والتنقلات علينا.</p></div>
+          <div class="step" data-reveal="up" style="--rd:.45s"><div class="step__n">04</div><h3>سافر واستمتع</h3><p>ومتابعتنا معك حتى عودتك بالسلامة.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section" style="background:var(--bg-2);border-block:1px solid var(--line)">
+      <div class="container">
+        <div class="sec-head center" style="margin-bottom:40px">
+          <span class="eyebrow both" data-reveal="up">آراء المسافرين</span>
+          <p style="color:var(--dim);font-size:13px;margin-top:8px">نماذج توضيحية للعرض — تُستبدل بآراء العملاء الحقيقية</p>
+        </div>
+        <div class="tst" data-reveal="blur">
+          <div class="tst__quote" data-icon="quote"></div>
+          <div class="tst__viewport"><div class="tst__track" id="tst-track"></div></div>
+          <div class="tst__nav">
+            <button class="icon-btn" id="tst-prev" aria-label="السابق" style="transform:scaleX(-1)" data-icon="arrow"></button>
+            <div class="tst__dots" id="tst-dots"></div>
+            <button class="icon-btn" id="tst-next" aria-label="التالي" data-icon="arrow"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="cta" data-reveal="scale">
+          <div class="cta__pattern" data-art="pattern"></div>
+          <img class="cta__logo" src="assets/logo-mark.png" alt="">
+          <h2 class="h-display split-words">العالم ينتظرك… <span class="metal-shine">احجز رحلتك اليوم</span></h2>
+          <p class="lead">أخبرنا بوجهتك وموعدك، ونحن نجهّز لك أفضل عرض خلال وقت قصير.</p>
+          <div class="hero__actions">
+            <a href="booking.html" class="btn btn--primary" data-magnetic>احجز الآن <span data-icon="arrow" style="display:contents"></span></a>
+            <a class="btn btn--ghost" data-tel data-magnetic><span data-icon="phone" style="display:contents"></span> <span data-site="phone" dir="ltr"></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

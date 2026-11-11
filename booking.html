@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>احجز رحلتك | شام ترافل للسياحة والسفر</title>
+  <meta name="description" content="شام ترافل للسياحة والسفر - تذاكر طيران، حجز فنادق، تأشيرات، رحلات سياحية وعمرة بأفضل الأسعار وخدمة موثوقة.">
+  <meta name="theme-color" content="#f5faff">
+  <link rel="icon" href="assets/logo-mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-loading" data-page="booking">
+
+  <div class="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__logo"><img src="assets/logo.png" alt=""></div>
+      <div class="preloader__bar"><i></i></div>
+      <div class="preloader__txt">0%</div>
+    </div>
+  </div>
+
+    <main>
+    <section class="page-hero">
+      <div class="page-hero__bg" data-art="pattern"></div>
+      <div class="container">
+        <span class="eyebrow both" data-reveal="up">خطوات بسيطة</span>
+        <h1 class="page-hero__title"><span class="word-reveal metal-shine">احجز رحلتك</span></h1>
+        <p class="lead" style="margin-inline:auto" data-reveal="up">املأ البيانات وسيصلنا طلبك مباشرة على واتساب ليتواصل معك فريقنا خلال وقت قصير.</p>
+        <div class="crumbs" data-reveal="up"><a href="index.html">الرئيسية</a><span>/</span>الحجز</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="max-width:900px">
+        <form class="form-card" id="booking-form" novalidate data-reveal="up">
+          <div class="booking-steps">
+            <div class="steps-bar">
+              <div><i></i><small>نوع الرحلة</small></div>
+              <div><i></i><small>تفاصيل السفر</small></div>
+              <div><i></i><small>بياناتك</small></div>
+              <div><i></i><small>التأكيد</small></div>
+            </div>
+
+            <!-- step 1 -->
+            <div class="form-step">
+              <h2 class="h-2" style="margin-bottom:20px">ما نوع الرحلة التي تريدها؟</h2>
+              <div class="choice-grid">
+                <label class="choice"><input type="radio" name="type" value="tour" data-label="رحلة سياحية" checked><span data-icon="globe">رحلة سياحية</span></label>
+                <label class="choice"><input type="radio" name="type" value="flights" data-label="تذاكر طيران"><span data-icon="plane">تذاكر طيران</span></label>
+                <label class="choice"><input type="radio" name="type" value="honey" data-label="شهر عسل"><span data-icon="heart">شهر عسل</span></label>
+                <label class="choice"><input type="radio" name="type" value="umrah" data-label="عمرة"><span data-icon="kaaba">عمرة</span></label>
+                <label class="choice"><input type="radio" name="type" value="hotels" data-label="حجز فندق"><span data-icon="hotel">حجز فندق</span></label>
+                <label class="choice"><input type="radio" name="type" value="visa" data-label="تأشيرة"><span data-icon="passport">تأشيرة</span></label>
+              </div>
+              <div class="field" style="margin-top:22px">
+                <label for="b-package">الباقة</label>
+                <select id="b-package" name="package"></select>
+              </div>
+            </div>
+
+            <!-- step 2 -->
+            <div class="form-step">
+              <h2 class="h-2" style="margin-bottom:20px">تفاصيل السفر</h2>
+              <div class="form-grid">
+                <div class="field"><label>تاريخ السفر المتوقع</label><input type="date" name="date"></div>
+                <div class="field"><label>نوع الغرفة</label>
+                  <select name="room"><option>غرفة ثنائية</option><option>غرفة ثلاثية</option><option>غرفة رباعية</option><option>غرفة مفردة</option></select></div>
+                <div class="field"><label>عدد البالغين *</label><input type="number" name="adults" min="1" value="1" required><div class="msg">مطلوب</div></div>
+                <div class="field"><label>عدد الأطفال</label><input type="number" name="children" min="0" value="0"></div>
+              </div>
+            </div>
+
+            <!-- step 3 -->
+            <div class="form-step">
+              <h2 class="h-2" style="margin-bottom:20px">بيانات التواصل</h2>
+              <div class="form-grid">
+                <div class="field"><label>الاسم الكامل *</label><input type="text" name="name" required placeholder="مثال: محمد أحمد"><div class="msg">الرجاء إدخال الاسم</div></div>
+                <div class="field"><label>رقم الهاتف / واتساب *</label><input type="tel" name="phone" required placeholder="09xx xxx xxx" dir="ltr" style="text-align:right"><div class="msg">الرجاء إدخال رقم صحيح</div></div>
+                <div class="field full"><label>المدينة</label><input type="text" name="city" placeholder="مدينة الإقامة"></div>
+                <div class="field full"><label>ملاحظات إضافية</label><textarea name="notes" placeholder="الوجهة المطلوبة، مستوى الفندق، أي طلبات خاصة..."></textarea></div>
+              </div>
+            </div>
+
+            <!-- step 4 -->
+            <div class="form-step">
+              <h2 class="h-2" style="margin-bottom:20px">راجع طلبك</h2>
+              <div class="summary" id="b-summary"></div>
+              <p style="color:var(--muted);font-size:14px;margin-top:16px">عند الضغط على "إرسال الطلب" سيتم فتح واتساب برسالة جاهزة تحتوي تفاصيل حجزك.</p>
+            </div>
+
+            <div class="form-nav">
+              <button type="button" class="btn btn--ghost" id="b-prev">السابق</button>
+              <button type="button" class="btn btn--primary" id="b-next">التالي <span data-icon="arrow" style="display:contents"></span></button>
+              <button type="submit" class="btn btn--primary" id="b-send"><span data-icon="whatsapp" style="display:contents"></span> إرسال الطلب</button>
+            </div>
+          </div>
+
+          <div class="success">
+            <svg viewBox="0 0 52 52" fill="none" stroke="#e6e8eb" stroke-width="2"><circle cx="26" cy="26" r="24" stroke-opacity=".3"/><path d="M15 27l7 7 15-15" pathLength="100" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h2 class="h-1 metal">تم تجهيز طلبك</h2>
+            <p class="lead" style="margin:10px auto 26px">أكمل الإرسال من واتساب، وسيتواصل معك فريق شام ترافل في أقرب وقت. رحلة سعيدة!</p>
+            <div class="hero__actions"><a id="wa-link" class="btn btn--primary" target="_blank" rel="noopener">افتح واتساب لإرسال الطلب</a><a href="index.html" class="btn btn--ghost">العودة للرئيسية</a></div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
